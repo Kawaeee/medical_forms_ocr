@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>OCR for Patient Form - Extraction</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+ 
+ <style>
+    img.resize {
+        max-width:50%;
+        max-height:50%;
+    }
+    #bg {
+      background: url("{{ url_for('static', filename='bg/hospital_bg.jpg') }}");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    
+  <body id="bg">
+    <div class="main" style="text-align: center;">
+      <h1><a href= "/">OCR for Patient Form</a></h1>
+
+      <img src="{{ image_name }}" class="resize" align="left">
+
+      <form method="POST" action="/result" enctype="multipart/form-data">
+        <h2>Edit forms</h2> <br>
+        Weight: <input type="text" name="weight" value="{{ weight }}"> <br><br>
+        Date of Evaluation: <input type="text" name="date" value="{{ date }}"> <br><br>
+        Initial BASDAI: <input type="text" name="init_bas" value="{{ init_bas }}"> <br><br>
+        Current BASDAI: <input type="text" name="curr_bas" value="{{ curr_bas }}"> <br><br>
+        Initial Physician Global Assessment: <input type="text" name="init_ga" value="{{ init_ga }}"> <br><br>
+        Current Physician Global Assessment: <input type="text" name="curr_ga" value="{{ curr_ga }}"> <br><br>
+        Additional Information from Doctor: <textarea rows="4" cols="50" name="additional" value="{{ additional }}"></textarea><br><br>
+        <input type="submit" value="Submit" style="height: 70px; width: 100px; left: 250; top: 250;">
+	      <br>
+      </form>
+    </div>
+
+      
+    <div class="footer">
+        <p>Developed by Kasidech Chumkun</p>
+    </div>
+    
+</body>
+
+
+
+</html>
