@@ -1,7 +1,7 @@
 # Medical Forms OCR
 - This project is a part of CSC491 Intelligent System and Application Class
 
-- It is web application that allow user to uploading PDF/JPG to extracting the paper-based medical form data into a digital medical form.
+- It is a web application that allows the user to upload PDF/JPG to extracting the paper-based medical form data into a digital medical form.
 
 Documentation link : -
 
@@ -23,5 +23,5 @@ Documentation link : -
   
 ## Limitations
  - Focus only Infliximab form
- - Require better quality of the form in order to improve OCR accuracy
- - Require locate each bbox manually
+ - In order to improve OCR accuracy, it requires better quality of the form 
+ - Require to locate each bounding box manually
