@@ -3,7 +3,7 @@
 
 - It is a web application that allows the user to upload PDF/JPG to extracting the paper-based medical form data into a digital medical form.
 
-Documentation link : -
+Documentation link : [Medical Forms OCR report](https://github.com/Kawaeee/medical_forms_ocr/blob/master/report.pdf)
 
 ## Installation
 
